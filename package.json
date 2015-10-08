@@ -8,7 +8,8 @@
     "start": "node dist/index.js",
     "test": "mocha --compilers js:babel/register --recursive specs && standard",
     "prepublish": "rm -rf dist && babel --optional runtime lib --out-dir dist --copy-files",
-    "postpublish": "rm -rf dist"
+    "postpublish": "rm -rf dist",
+    "2npm": "publish"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,8 @@
   },
   "devDependencies": {
     "babel-runtime": "^5.8.20",
-    "bluebird": "^2.9.34"
+    "bluebird": "^2.9.34",
+    "publish": "^0.5.0"
   },
   "standard": {
     "ignore": [
